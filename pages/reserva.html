@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWay - Reserva</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo-tripway.png" alt="Logotipo da agência TripWay" width="250">
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./pacotes.html">Pacotes</a></li>
+                <li><a href="./reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contato e reserva</h1>
+            <p>Preencha os dados para simular uma reserva com a TripWay.</p>
+            <img src="../images/reserva.jpg" alt="Praia de Ponta Verde em Maceió" width="550">
+        </section>
+
+        <section>
+            <h2>Formulário de interesse</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="destino">Destino de interesse:</label><br>
+                    <select id="destino" name="destino" required>
+                        <option value="">Escolha um destino</option>
+                        <option value="florianopolis">Florianópolis</option>
+                        <option value="gramado">Gramado</option>
+                        <option value="salvador">Salvador</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="data">Data da viagem:</label><br>
+                    <input type="date" id="data" name="data" required>
+                </p>
+
+                <p>
+                    <label for="pessoas">Quantidade de pessoas:</label><br>
+                    <input type="number" id="pessoas" name="pessoas" min="1" required>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>TripWay - Guia de Viagens</p>
+        <p>Contato: contato@tripway.com.br</p>
+    </footer>
+</body>
+</html>
